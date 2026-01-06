@@ -25,7 +25,9 @@ public class NaukariPage extends BasePage {
     }
 
     public void userLoginToNaukri(String url){
-        page.navigate(ConfigReader.get(url));
+        String baseUrl = ConfigReader.get(url);
+        System.out.println("User navigating to : "+baseUrl);
+        page.navigate(baseUrl);
         String title = getTitle();
         System.out.println("Page title is : "+title);
 

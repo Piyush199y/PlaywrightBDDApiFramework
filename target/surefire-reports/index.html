@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
-              <span class="suite-name border-failed">Surefire suite</span>
+              <span class="suite-name border-passed">Surefire suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -60,7 +60,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-Surefire_suite" class="navigator-link ">
-                    <span>1 group</span>
+                    <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,35 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
-                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Surefire_suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="org.piyush.runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Update the Naukri profile&quot;, &quot;Naukri profile update&quot;)">runScenario("Update the Naukri profile", "Naukri profile update")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Surefire_suite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods passed suite-Surefire_suite"> (hide)</a> <!-- hide-methods passed suite-Surefire_suite -->
-                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods passed suite-Surefire_suite"> (show)</a> <!-- show-methods passed suite-Surefire_suite -->
-                    </span>
-                    <div class="method-list-content passed suite-Surefire_suite">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="org.piyush.runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Open website&quot;, &quot;Login feature&quot;)">runScenario("Open website", "Login feature")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-Surefire_suite -->
+                    <span class="method-stats">0 methods,   </span>
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -132,113 +104,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
-          <div class="suite-Surefire_suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">org.piyush.runners.TestRunner</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Update the Naukri profile&quot;, &quot;Naukri profile update&quot;)">
-                  </a> <!-- runScenario("Update the Naukri profile", "Naukri profile update") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Update the Naukri profile","Naukri profile update")</span>
-                  <div class="stack-trace">com.microsoft.playwright.PlaywrightException: Error {
-  message=&apos;url: expected string, got undefined
-  name=&apos;Error
-  stack=&apos;Error: url: expected string, got undefined
-    at tString (C:\Users\piyus\AppData\Local\Temp\playwright-java-3250394499490968746\package\lib\protocol\validatorPrimitives.js:58:9)
-    at C:\Users\piyus\AppData\Local\Temp\playwright-java-3250394499490968746\package\lib\protocol\validatorPrimitives.js:107:21
-    at DispatcherConnection.dispatch (C:\Users\piyus\AppData\Local\Temp\playwright-java-3250394499490968746\package\lib\server\dispatchers\dispatcher.js:281:21)
-    at transport.onmessage (C:\Users\piyus\AppData\Local\Temp\playwright-java-3250394499490968746\package\lib\cli\driver.js:52:57)
-    at Immediate._onImmediate (C:\Users\piyus\AppData\Local\Temp\playwright-java-3250394499490968746\package\lib\protocol\transport.js:77:34)
-    at process.processImmediate (node:internal/timers:478:21)
-}
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:56)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
-	at com.microsoft.playwright.impl.FrameImpl.navigateImpl(FrameImpl.java:463)
-	at com.microsoft.playwright.impl.PageImpl.lambda$navigate$46(PageImpl.java:870)
-	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
-	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
-	at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:870)
-	at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:42)
-	at com.microsoft.playwright.Page.navigate(Page.java:5490)
-	at org.piyush.pages.NaukariPage.userLoginToNaukri(NaukariPage.java:28)
-	at org.piyush.steps.NaukriSteps.userLandsOnHomePageAfterLoginTo(NaukriSteps.java:15)
-	at ✽.User lands on home page after login to &quot;NaukriUrl&quot;(file:///C:/Users/piyus/PlaywrightBDDApi18122025/src/test/resources/features/Naukari.feature:4)
-Caused by: com.microsoft.playwright.impl.DriverException: Error {
-  message=&apos;url: expected string, got undefined
-  name=&apos;Error
-  stack=&apos;Error: url: expected string, got undefined
-    at tString (C:\Users\piyus\AppData\Local\Temp\playwright-java-3250394499490968746\package\lib\protocol\validatorPrimitives.js:58:9)
-    at C:\Users\piyus\AppData\Local\Temp\playwright-java-3250394499490968746\package\lib\protocol\validatorPrimitives.js:107:21
-    at DispatcherConnection.dispatch (C:\Users\piyus\AppData\Local\Temp\playwright-java-3250394499490968746\package\lib\server\dispatchers\dispatcher.js:281:21)
-    at transport.onmessage (C:\Users\piyus\AppData\Local\Temp\playwright-java-3250394499490968746\package\lib\cli\driver.js:52:57)
-    at Immediate._onImmediate (C:\Users\piyus\AppData\Local\Temp\playwright-java-3250394499490968746\package\lib\protocol\transport.js:77:34)
-    at process.processImmediate (node:internal/timers:478:21)
-}
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:259)
-	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
-	at com.microsoft.playwright.impl.FrameImpl.navigateImpl(FrameImpl.java:463)
-	at com.microsoft.playwright.impl.PageImpl.lambda$navigate$46(PageImpl.java:870)
-	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
-	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
-	at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:870)
-	at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:42)
-	at com.microsoft.playwright.Page.navigate(Page.java:5490)
-	at org.piyush.pages.NaukariPage.userLoginToNaukri(NaukariPage.java:28)
-	at org.piyush.steps.NaukriSteps.userLandsOnHomePageAfterLoginTo(NaukriSteps.java:15)
-	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
-	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
-	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
-	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
-	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
-	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
-	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
-	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
-	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-failed -->
-          <div class="suite-Surefire_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">org.piyush.runners.TestRunner</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Open website&quot;, &quot;Login feature&quot;)">
-                  </a> <!-- runScenario("Open website", "Login feature") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Open website","Login feature")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-passed -->
         </div> <!-- panel Surefire_suite -->
         <div panel-name="test-xml-Surefire_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -274,14 +139,6 @@ Caused by: com.microsoft.playwright.impl.DriverException: Error {
             <span class="header-content">Groups for Surefire suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="test-group">
-              <span class="test-group-name">cucumber</span>
-              <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">runScenario</span>
-                <br/>
-              </div> <!-- method-in-group -->
-            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Surefire_suite" class="panel">
@@ -298,20 +155,12 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
-data.setCell(0, 0, 0)
-data.setCell(0, 1, 'runScenario')
-data.setCell(0, 2, 'org.piyush.runners.TestRunner')
-data.setCell(0, 3, 26237);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'runScenario')
-data.setCell(1, 2, 'org.piyush.runners.TestRunner')
-data.setCell(1, 3, 2908);
+data.addRows(0);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 29 seconds</span>
+              <span class="suite-total-time">Total running time: 0 ms</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -339,22 +188,12 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">org.piyush.runners.TestRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@2c88b9fc)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@7d9f158f)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">runScenario("Update the Naukri profile", "Naukri profile update")</span>
-                <span class="method-start">255 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Open website", "Login feature")</span>
-                <span class="method-start">26508 ms</span>
-              </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">29421 ms</span>
+                <span class="method-start">206 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

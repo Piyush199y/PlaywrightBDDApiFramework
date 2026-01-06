@@ -36,7 +36,7 @@ public class PlaywrightManager {
             }
         }
 
-        context = browser.newContext();
+        context = browser.newContext(new Browser.NewContextOptions().setViewportSize(null)); // MAXIMIZE IN PLAYWRIGHT
         page = context.newPage();
     }
 

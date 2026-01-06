@@ -9,80 +9,9 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Surefire suite</th></tr>
-<tr><td><a href="#t0">Surefire test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">29,450</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Surefire test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">227</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">org.piyush.runners.TestRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="1">1767728229845</td><td rowspan="1">26237</td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">org.piyush.runners.TestRunner</td><td><a href="#m1">runScenario</a></td><td rowspan="1">1767728256098</td><td rowspan="1">2908</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4" class="invisible"/></tr></tbody>
 </table>
-<h2>Surefire test</h2><h3 id="m0">org.piyush.runners.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Update the Naukri profile&quot;</td><td>&quot;Naukri profile update&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">com.microsoft.playwright.PlaywrightException: Error {
-  message=&apos;url: expected string, got undefined
-  name=&apos;Error
-  stack=&apos;Error: url: expected string, got undefined
-    at tString (C:\Users\piyus\AppData\Local\Temp\playwright-java-3250394499490968746\package\lib\protocol\validatorPrimitives.js:58:9)
-    at C:\Users\piyus\AppData\Local\Temp\playwright-java-3250394499490968746\package\lib\protocol\validatorPrimitives.js:107:21
-    at DispatcherConnection.dispatch (C:\Users\piyus\AppData\Local\Temp\playwright-java-3250394499490968746\package\lib\server\dispatchers\dispatcher.js:281:21)
-    at transport.onmessage (C:\Users\piyus\AppData\Local\Temp\playwright-java-3250394499490968746\package\lib\cli\driver.js:52:57)
-    at Immediate._onImmediate (C:\Users\piyus\AppData\Local\Temp\playwright-java-3250394499490968746\package\lib\protocol\transport.js:77:34)
-    at process.processImmediate (node:internal/timers:478:21)
-}
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:56)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
-	at com.microsoft.playwright.impl.FrameImpl.navigateImpl(FrameImpl.java:463)
-	at com.microsoft.playwright.impl.PageImpl.lambda$navigate$46(PageImpl.java:870)
-	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
-	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
-	at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:870)
-	at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:42)
-	at com.microsoft.playwright.Page.navigate(Page.java:5490)
-	at org.piyush.pages.NaukariPage.userLoginToNaukri(NaukariPage.java:28)
-	at org.piyush.steps.NaukriSteps.userLandsOnHomePageAfterLoginTo(NaukriSteps.java:15)
-	at ✽.User lands on home page after login to &quot;NaukriUrl&quot;(file:///C:/Users/piyus/PlaywrightBDDApi18122025/src/test/resources/features/Naukari.feature:4)
-Caused by: com.microsoft.playwright.impl.DriverException: Error {
-  message=&apos;url: expected string, got undefined
-  name=&apos;Error
-  stack=&apos;Error: url: expected string, got undefined
-    at tString (C:\Users\piyus\AppData\Local\Temp\playwright-java-3250394499490968746\package\lib\protocol\validatorPrimitives.js:58:9)
-    at C:\Users\piyus\AppData\Local\Temp\playwright-java-3250394499490968746\package\lib\protocol\validatorPrimitives.js:107:21
-    at DispatcherConnection.dispatch (C:\Users\piyus\AppData\Local\Temp\playwright-java-3250394499490968746\package\lib\server\dispatchers\dispatcher.js:281:21)
-    at transport.onmessage (C:\Users\piyus\AppData\Local\Temp\playwright-java-3250394499490968746\package\lib\cli\driver.js:52:57)
-    at Immediate._onImmediate (C:\Users\piyus\AppData\Local\Temp\playwright-java-3250394499490968746\package\lib\protocol\transport.js:77:34)
-    at process.processImmediate (node:internal/timers:478:21)
-}
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:259)
-	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
-	at com.microsoft.playwright.impl.FrameImpl.navigateImpl(FrameImpl.java:463)
-	at com.microsoft.playwright.impl.PageImpl.lambda$navigate$46(PageImpl.java:870)
-	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
-	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
-	at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:870)
-	at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:42)
-	at com.microsoft.playwright.Page.navigate(Page.java:5490)
-	at org.piyush.pages.NaukariPage.userLoginToNaukri(NaukariPage.java:28)
-	at org.piyush.steps.NaukriSteps.userLandsOnHomePageAfterLoginTo(NaukriSteps.java:15)
-	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
-	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
-	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
-	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
-	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
-	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
-	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
-	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
-	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">org.piyush.runners.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Open website&quot;</td><td>&quot;Login feature&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-</body>
+<h2>Surefire test</h2></body>
 </html>
