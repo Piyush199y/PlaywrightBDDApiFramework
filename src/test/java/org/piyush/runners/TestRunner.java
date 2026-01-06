@@ -8,7 +8,7 @@ import io.cucumber.testng.CucumberOptions;
         glue = {"org.piyush.steps", "org.piyush.hooks"},
         plugin = {"pretty"},
         monochrome = true,
-        tags = "naukri"
+        tags = "@naukri"
 )
 public class TestRunner extends AbstractTestNGCucumberTests {
 }

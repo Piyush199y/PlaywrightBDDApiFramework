@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Surefire test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Jan 07 01:33:10 IST 2026</td>
+<td>Started on:</td><td>Wed Jan 07 02:03:33 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (203 ms)</td>
+<tr><td>Total time:</td><td>33 seconds (33363 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,5 +67,28 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='org.piyush.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: org.piyush.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Update the Naukri profile", "Naukri profile update"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;String.length()&quot; because &quot;existingText&quot; is null
+	at org.piyush.pages.NaukariPage.userUpdateProfileSummary(NaukariPage.java:67)
+	at org.piyush.steps.NaukriSteps.userUpdateTheProfile(NaukriSteps.java:22)
+	at ?.User update the profile(file:///C:/Users/piyus/PlaywrightBDDApi18122025/src/test/resources/features/naukri.feature:6)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1122233828", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1122233828'><pre>java.lang.NullPointerException: Cannot invoke &quot;String.length()&quot; because &quot;existingText&quot; is null
+	at org.piyush.pages.NaukariPage.userUpdateProfileSummary(NaukariPage.java:67)
+	at org.piyush.steps.NaukriSteps.userUpdateTheProfile(NaukriSteps.java:22)
+	at ?.User update the profile(file:///C:/Users/piyus/PlaywrightBDDApi18122025/src/test/resources/features/naukri.feature:6)
+</pre></div></td>
+<td>33</td>
+<td>org.piyush.runners.TestRunner@d706f19</td></tr>
+</table><p>
 </body>
 </html>

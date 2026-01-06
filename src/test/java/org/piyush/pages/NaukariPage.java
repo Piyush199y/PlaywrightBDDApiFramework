@@ -2,6 +2,7 @@ package org.piyush.pages;
 
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
+import com.microsoft.playwright.options.WaitForSelectorState;
 import org.piyush.base.BasePage;
 import org.piyush.config.ConfigReader;
 
@@ -58,19 +59,27 @@ public class NaukariPage extends BasePage {
 
     public void userUpdateProfileSummary(){
         page.click(editResume);
+        page.locator(resumeHeadline).waitFor(new Locator.WaitForOptions().setState(WaitForSelectorState.VISIBLE));
+
         String existingText = page.getAttribute(resumeHeadline,"value");
+        System.out.println("existingText : " +existingText);
 
         if (existingText.length() == 250) {
             char lastChar = existingText.charAt(existingText.length() - 1);
             String modifiedText = existingText.substring(0, existingText.length() - 1);
 
-            page.locator(resumeHeadline).fill("");
-            page.locator(resumeHeadline).fill(modifiedText);
-            page.locator(resumeHeadline).fill(String.valueOf(lastChar));
+//            page.locator(resumeHeadline).fill("");
+//            page.locator(resumeHeadline).fill(modifiedText);
+//            page.locator(resumeHeadline).fill(String.valueOf(lastChar));
+
+            page.fill(resumeHeadline, "");
+            page.fill(resumeHeadline, modifiedText + lastChar);
 
         } else {
             page.locator(resumeHeadline).fill("");
+
             page.locator(resumeHeadline).fill(existingText);
+
         }
 
         page.click(saveButton);

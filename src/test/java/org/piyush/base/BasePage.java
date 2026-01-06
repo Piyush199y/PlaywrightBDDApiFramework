@@ -1,6 +1,8 @@
 package org.piyush.base;
 
+import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
+import com.microsoft.playwright.options.WaitForSelectorState;
 
 public class BasePage {
     protected Page page;
@@ -29,8 +31,8 @@ public class BasePage {
         return page.textContent(selector);
     }
 
-    public void waitForSelector(String selector) {
-        page.waitForSelector(selector);
+    public void waitForSelectorIn(String selector) {
+        page.locator(selector).waitFor(new Locator.WaitForOptions().setState(WaitForSelectorState.VISIBLE));
     }
 
     public boolean isVisible(String selector) {

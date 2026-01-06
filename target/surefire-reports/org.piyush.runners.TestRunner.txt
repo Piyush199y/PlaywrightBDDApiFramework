@@ -1,4 +1,10 @@
 -------------------------------------------------------------------------------
 Test set: org.piyush.runners.TestRunner
 -------------------------------------------------------------------------------
-Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.648 s -- in org.piyush.runners.TestRunner
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 34.01 s <<< FAILURE! -- in org.piyush.runners.TestRunner
+org.piyush.runners.TestRunner.runScenario["Update the Naukri profile", "Naukri profile update"](1) -- Time elapsed: 33.05 s <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "String.length()" because "existingText" is null
+	at org.piyush.pages.NaukariPage.userUpdateProfileSummary(NaukariPage.java:67)
+	at org.piyush.steps.NaukriSteps.userUpdateTheProfile(NaukriSteps.java:22)
+	at ✽.User update the profile(file:///C:/Users/piyus/PlaywrightBDDApi18122025/src/test/resources/features/naukri.feature:6)
+
