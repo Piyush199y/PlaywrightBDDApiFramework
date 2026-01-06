@@ -35,6 +35,7 @@ public class NaukariPage extends BasePage {
     }
 
     public void userUpdateProfile(){
+
         page.click(profileButton);
         try{
             page.click(deleteResButton);
